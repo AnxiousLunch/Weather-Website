@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Heading">
+        <p><h3>10 Days Forecast</h3></p>
+        <div class="Forecast-items">
+            <div class="day">
+                <div class="day-header">
+                    <p>Today</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">39&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">60% humidity</span>
+                            <span class="wind">12 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+       
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p> Sat 11 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">38&deg;C/27&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">80% humidity</span>
+                            <span class="wind">22 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">32</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 15 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 50%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Sun 12 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">34&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">50% humidity</span>
+                            <span class="wind">15 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Mon 13 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">41&deg;C/32&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">90% humidity</span>
+                            <span class="wind">5 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                       </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Tues 14 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">38&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">45% humidity</span>
+                            <span class="wind">11 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr> 
+                      </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Wed 15 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">39&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">60% humidity</span>
+                            <span class="wind">12 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Thurs 16 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">35&deg;C/21&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">40% humidity</span>
+                            <span class="wind">19 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Fri 17 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">37&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">50% humidity</span>
+                            <span class="wind">13 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Sat 18 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">31&deg;C/22&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">10% humidity</span>
+                            <span class="wind">17 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day-header">
+                    <p>Sun 19 Oct</p>
+                    <div class="unit-toggle">
+                        <button class="unit-btn active" data-unit="C">°C</button>
+                        <button class="unit-btn" data-unit="F">°F</button>
+                    </div>
+                    <button class="favorite-btn">☆</button>
+                </div>
+                <span class="forecast">
+                    <div class="weather-icon sunny"></div>
+                    <div class="forecast-detail">
+                        <p class="temp">35&deg;C/26&deg;C</p>
+                        <p class="extra-info">
+                            <span class="humidity">50% humidity</span>
+                            <span class="wind">14 km/h ↗</span>
+                        </p>
+                    </div>
+                    <button class="toggle-button"></button>  
+                </span>
+                <div class="more-details">
+                    <div class="table-container">
+                        <table class="hourly-temp">
+                             <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>00:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 70%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>06:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">24</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 10 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 40%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>12:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">36</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">85% · 8 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 90%"></div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="time-cell">
+                                        <span>18:00</span>
+                                        <div class="weather-icon-small moon"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="temp-detail">
+                                        <span class="temp-value">28</span><span class="temp-unit">°C</span>
+                                        <span class="extra-detail">65% · 16 km/h</span>
+                                    </div>
+                                </td>
+                                <td><div class="temp-bar" style="width: 55%"></div></td>
+                            </tr>
+                       </table>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
