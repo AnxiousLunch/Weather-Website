@@ -13,11 +13,6 @@ A responsive and interactive weather website that provides a 10-day weather fore
 - HTML5: The structural framework of the website.
 - CSS3: For styling the page, including transitions, flexbox layout, responsive design, and custom weather icons.
 - JavaScript: For handling interactive features like toggling between Celsius and Fahrenheit, expanding/collapsing details, and marking favorites.
-
-## Project Structure
-``` ├── index.html # Main HTML structure for the weather forecast page ``` ```├── styles.css # Custom CSS for layout and styling ``` ```├── README.md # Project documentation (this file) ```└── images/ # Folder for weather icons (e.g., sunny, cloudy, moon, etc.)```
-#Screenshots
-
 ## Future Enhancements
 Weather API Integration: Plan to integrate a live weather API (e.g., OpenWeather, WeatherAPI) to fetch real-time weather data.
 More Weather Conditions: Add more weather icons and support for a wider range of weather conditions (e.g., snow, thunderstorms).
