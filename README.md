@@ -1,4 +1,4 @@
-#Weather Website
+# Weather Website
 A responsive and interactive weather website that provides a 10-day weather forecast, including hourly details such as temperature, wind speed, humidity, and more. Built using HTML and CSS, the website presents a user-friendly design, featuring smooth transitions, weather icons, and the ability to toggle between Celsius and Fahrenheit units.
 
 #Features
