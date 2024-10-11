@@ -15,7 +15,7 @@ A responsive and interactive weather website that provides a 10-day weather fore
 - JavaScript: For handling interactive features like toggling between Celsius and Fahrenheit, expanding/collapsing details, and marking favorites.
 
 ## Project Structure
-├── index.html # Main HTML structure for the weather forecast page ├── styles.css # Custom CSS for layout and styling ├── README.md # Project documentation (this file) └── images/ # Folder for weather icons (e.g., sunny, cloudy, moon, etc.)
+``` ├── index.html # Main HTML structure for the weather forecast page ``` ```├── styles.css # Custom CSS for layout and styling ``` ```├── README.md # Project documentation (this file) ```└── images/ # Folder for weather icons (e.g., sunny, cloudy, moon, etc.)```
 #Screenshots
 
 ## Future Enhancements
